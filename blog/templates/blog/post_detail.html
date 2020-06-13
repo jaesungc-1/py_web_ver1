@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Pattaya&display=swap" rel="stylesheet">
+    <script>
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://jaesungc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <style>
+    .box{
+            width:800px; height:auto;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            display: inline-block;
+            margin-left:50px;
+            margin-bottom:20px;
+        }
+        img{
+            width:380px; height:380px;
+            margin:auto; display:block;
+        }
+        p{
+            padding-left:20px;
+            padding-right:20px;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size:20px;
+        }
+        .description{
+            height:100px;
+        }
+        .box_title{
+                text-align:center;
+                margin:10px;
+                font-family: 'Pattaya', sans-serif;
+                font-size:30px;
+                color: orangered;
+        }
+        #title{
+            font-family: 'Pattaya', sans-serif;
+            text-align: center;
+            font-size:130px;
+        }
+        body{
+            text-align:center;
+        }
+        .label{
+            font-family: 'Pattaya', sans-serif;
+            color:orangered;
+        }
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <h1 id="title">{{ object.title }}</h1>
+    <div class="box">
+        <p class="description"><span class="label">Description:</span> {{ object.description }}</p>
+        <p class="label">Create Date: {{ object.create_date }}</p>
+        <p class="label">Modify Date: {{ object.modify_date }}</p>
+        <div class="imgBox"><img src="{{ object.image.url }}" width="600" height="600"></div>
+        <div id="disqus_thread"></div>
+    </div>
+</div>
+</body>
+</html>

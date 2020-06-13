@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .register_form{
+            width:300px; height: auto;
+            margin:auto; margin-top:200px;
+            background-color:orangered;
+            border-radius:5px; padding:20px; color:white;
+            font-weight:bolder;
+        }
+        .register_link{
+            text-decoration:none;
+            color:white;
+        }
+        .register_link:hover{
+            color:black;
+        }
+        .register_msg{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+<div class="register_form">
+    <div>
+    <h1 class="register_msg">Sign up Complete!</h1>
+    </div>
+    <div>
+    <a href="{% url 'index' %}" class="register_msg register_link">Go Index</a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube List</title>
+</head>
+<body>
+<h1>Youtube List</h1>
+    <div id="content">
+        <ul>
+            {% for youtube in object_list %}
+            <li>{{ youtube }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

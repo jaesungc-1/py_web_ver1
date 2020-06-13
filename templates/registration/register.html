@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .register_form{
+            width:410px; height: auto;
+            margin:auto; margin-top:200px;
+            border:1px solid orangered;
+            border-radius: 5px; padding:20px;
+            font-weight: bolder;
+        }
+        .register_label, .register_input{display: inline-block;}
+        .register_label{width: 200px;}
+        .register_input{width: 200px;}
+        input{width:100%;}
+        .register_btn{
+            width: 100%; height:50px;
+            background-color: orangered;
+            color:white, border-radius:5px;
+            font-weight:bolder;
+        }
+    </style>
+</head>
+<body>
+<div class="register_form">
+<form method="post" action=".">{% csrf_token %}
+    <div>
+        <div class="register_label">{{ form.username.label_tag }}</div><div class="register_input"> {{ form.username }}</div>
+    </div>
+    <div>
+        <div class="register_label">{{ form.password1.label_tag }}</div><div class="register_input"> {{ form.password1 }}</div>
+    </div>
+    <div>
+        <div class="register_label">{{ form.password2.label_tag }}</div><div class="register_input"> {{ form.password2 }}</div>
+    </div>
+    <button type="submit" class="register_btn">SIGN UP</button>
+</form>
+</div>
+</body>
+</html>
