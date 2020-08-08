@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.core.urlresolvers import reverse_lazy
 
 class IndexView(TemplateView):
-    template_name = 'index.html'
+    template_name = 'new_index.html'
 
 class UserCreateView(CreateView):
     template_name = 'registration/register.html'

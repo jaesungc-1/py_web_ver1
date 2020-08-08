@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p>sign out</p>
-<p><a href="{% url 'index' %}">Go Index</a></p>
-<p><a href="{% url 'login' %}">Sign in Again</a></p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div id="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>SIGN OUT</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <a href="{% url 'index' %}">Go Index</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <a href="{% url 'login' %}">Sign in Again</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

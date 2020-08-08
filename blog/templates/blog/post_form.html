@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="form_row">
+            {{ form.title.label_tag }} {{ form.title }}
+        </div>
+        <div class="form_row">
+            {{ form.image.label_tag }} {{ form.image }}
+        </div>
+        <div class="form_row">
+            {{ form.description.label_tag }} {{ form.description }}
+        </div>
+        <div class="form_row">
+            <button type="submit">Generate</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
